@@ -1,0 +1,22 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: stars
+  labels:
+    istio-injection: enabled
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: management-ui 
+  labels:
+    role: management-ui
+    istio-injection: enabled
+--- 
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: client
+  labels:
+    role: client
+    istio-injection: enabled
